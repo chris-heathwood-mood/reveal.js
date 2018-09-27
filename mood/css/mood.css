@@ -1,0 +1,44 @@
+
+.reveal h1,
+.reveal h2 {
+  color: #00b0b9;
+}
+
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  color: #394048;
+}
+
+.reveal p {
+  color: #5f666e;
+}
+
+.reveal .slides img {
+  border: none;
+}
+
+.reveal .backgrounds div {
+  background-attachment: fixed;
+  background-image: url('/mood/images/logo.png');
+  background-position: bottom 150px right 150px; 
+  background-repeat: no-repeat;
+  background-size: 318px 118px;
+  transition: none;
+}
+
+.reveal .backgrounds div:not(:first-child)::before {
+  background-attachment: fixed;
+  background-image: url('/mood/images/side.png');
+  background-position: top left; 
+  background-repeat: no-repeat;
+  background-size: 5% 100%;
+  bottom: 0;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
