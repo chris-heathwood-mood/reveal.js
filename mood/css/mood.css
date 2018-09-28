@@ -9,6 +9,7 @@
 .reveal h5,
 .reveal h6 {
   color: #394048;
+  text-transform: none;
 }
 
 .reveal p {
