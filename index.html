@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Linux Tech session</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
@@ -41,7 +41,10 @@
 						<p class="fragment">It's free</p>
 						<aside class="notes">
 							<ul>
+								<li>Kernal is GPL v2, anyone can use it and add to it</li>
+								<li>Almost all open source projects (and apache ones) run on it as a first citizen</li>
 								<li>Doesn't have a GUI by default</li>
+								<li>It could even run on a real IoT toaster, arduinos, pis, multi core mega machines</li>
 								<li>It's free as in "free speech," not as in "free beer" :p</li>
 							</ul>
 						</aside>
@@ -50,40 +53,71 @@
 				<section>
 					<h2>History</h2>
 					<section>
-						<p class="fragment">A long time ago ...</p>
-					</section>
-					<section>
 						<h4 class="fragment">It started with Unix in the 1970s</h4>
-						<p class="fragment">Multi User Operating System</p>
+						<p class="fragment">Multi User, Multitasking Operating System</p>
 						<p class="fragment">Dumb terminals</p>
 						<p class="fragment">Built around the "Unix philosophy"</p>
-						<p class="fragment">Things should do one job and do it well</p>
+						<aside class="notes">
+							<ul>
+								<li>Came out of AT&T, Apple Macs run it</li>
+								<li>Concept of multi users and multitasking built in, Daemons</li>
+								<li>Original started out on mainframe systems, powerful server with dumb terminals. Though Sparc machines existed</li>
+								<li>Things should do one job and do it well</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 							<h4 class="fragment">Birth of Linux in the 1990s</h4>
 							<p class="fragment">Linus Torvalds</p>
 							<p class="fragment">Runs on x86 (originally 386)</p>
 							<p class="fragment">Ported a lot of programs from unix</p>
-					</section>
+							<aside class="notes">
+								<ul>
+									<li>Small side project</li>
+									<li>Still involved in kernel project</li>
+									<li>So you could run it on any PC pretty early on</li>
+									<li>bash and gcc to start of with, then x-windows then loads after that</li>
+								</ul>
+							</aside>
+						</section>
 				</section>
 				<section>
 					<h2>Kernel</h2>
 					<section>
-						<p class="fragment">TODO</p>
-					</section>
-					<section>
 						<h4 class="fragment">The core of linux</h4>
 						<p class="fragment">All the same</p>
+						<p class="fragment">One of the main things behind docker</p>
+						<aside class="notes">
+							<ul>
+								<li>The generic interfact between code and hardware</li>
+								<li>All distributions use this at it's core</li>
+								<li>Shared core means docker easier to do and possible, mention LXC (Linux Containers)</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 				<section>
 					<h2>Distros</h2>
 					<section>
-						<p class="fragment">TODO</p>
+						<p><img src="linux/all_the_distros.png" /></p>
+					</section>
+					<section>
+						<h4 class="fragment">Bucket loads of distros</h4>
+						<p class="fragment">All the same core</p>
+						<p class="fragment">Focus on different areas</p>
+						<p class="fragment">Different levels of support</p>
 					</section>
 					<section>
 						<h4 class="fragment">Alpine</h4>
-						<p class="fragment">All the same</p>
+						<p><img src="linux/alpinelinux_logo.svg" /></p>
+						<p class="fragment">Focused on size</p>
+						<aside class="notes">
+							<ul>
+								<li>The generic interfact between code and hardware</li>
+								<li>All distributions use this at it's core</li>
+								<li>Shared core means docker easier to do and possible, mention LXC (Linux Containers)</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<h4 class="fragment">Ubuntu</h4>
