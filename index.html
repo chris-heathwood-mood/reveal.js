@@ -261,7 +261,7 @@ SHA256 = F837FE26 0587F716 29AAD1F4 FB671927 4E948111 DC96FFC5 A8E26F27 DEAC5602
 				<section>
 					<h2>Admin</h2>
 					<section>
-						<h2>Access</h2>
+						<h3>Access</h3>
 						<p class="fragment">ssh</p>
 						<p class="fragment">sudo</p>
 						<p class="fragment">sudo su</p>
@@ -274,7 +274,7 @@ SHA256 = F837FE26 0587F716 29AAD1F4 FB671927 4E948111 DC96FFC5 A8E26F27 DEAC5602
 						</aside>
 					</section>
 					<section>
-						<h2>Permissions</h2>
+						<h3>Permissions</h3>
 						<p class="fragment"><img src="linux/ls.png" /><br />users/groups and permissions</p>
 						<p class="fragment">chown</p>
 						<p class="fragment">chmod</p>
@@ -287,7 +287,7 @@ SHA256 = F837FE26 0587F716 29AAD1F4 FB671927 4E948111 DC96FFC5 A8E26F27 DEAC5602
 						</aside>
 					</section>
 					<section>
-						<h2>Managing tasks</h2>
+						<h3>Managing tasks</h3>
 						<p class="fragment">ps</p>
 						<p class="fragment">jps</p>
 						<p class="fragment">top</p>
@@ -296,6 +296,19 @@ SHA256 = F837FE26 0587F716 29AAD1F4 FB671927 4E948111 DC96FFC5 A8E26F27 DEAC5602
 								<li>ps -aux, all of the current running process for all users </li>
 								<li>If you have jdk see all of the java processes running</li>
 								<li>Break down top, number of processors minus a bit</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h3>Stopping tasks</h3>
+						<p class="fragment">service nifi stop</p>
+						<p class="fragment">kill #PID</p>
+						<p class="fragment">kill -n #PID</p>
+						<aside class="notes">
+							<ul>
+								<li>safest usually works</li>
+								<li>equivalent of 15</li>
+								<li>kill with priorities in the following order `15 2 3 6 9`</li>
 							</ul>
 						</aside>
 					</section>
