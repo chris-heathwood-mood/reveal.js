@@ -190,13 +190,68 @@
 					</section>	
 				</section>
 				<section>
+					<h2>Basic commands</h2>
+					<p class="fragment">pwd</p>
+					<p class="fragment"><img src="linux/ls.png" /><br />ls -al</p>
+					<p class="fragment">mv</p>
+					<p class="fragment">cp</p>
+					<aside class="notes">
+						<ul>
+							<li>Present Working Directory</li>
+							<li>List files, talk about what each bit means</li>
+							<li>Move files about</li>
+							<li>Copy files about</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>Useful programs</h2>
+					<p class="fragment">cat</p>
+					<p class="fragment">grep</p>
+					<p class="fragment">sed</p>
+					<p class="fragment">awk</p>
+					<p class="fragment">less/more</p>
+					<p class="fragment">tail -f</p>
+					<aside class="notes">
+						<ul>
+							<li>Show the contents of a file really meant for "concatenate"</li>
+							<li>Global regular expression print, basically search for stuff using regex's</li>
+							<li>Stream editor, replace text in the current stream</li>
+							<li>Aho, Weinberger and Kernighan, it's own loanguage very powerful</li>
+							<li>View big files, less can scroll back up again :p</li>
+							<li>Go to the end of a file, -f is good to follow</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
 					<h2>Power of pipes</h2>
+					<section>
+							<pre class="fragment">names.txt<code>bob
+fred
+dave
+							</code></pre>
+							<pre class="fragment"><code>cat names.txt | tail -n 1 | sed 's/.*/\u&/'</code></pre>
+						</section>
+						<section>
+						<pre class="fragment">.mds file<code>/build/source/target/artifacts/hadoop-3.1.1.tar.gz: 
+MD5 = 0B 6A B0 6B 59 AE 75 F4  33 DE 38 77 83 F1 90 11
+/build/source/target/artifacts/hadoop-3.1.1.tar.gz: 
+SHA256 = F837FE26 0587F716 29AAD1F4 FB671927 4E948111 DC96FFC5 A8E26F27 DEAC5602</code></pre>
+						<pre class="fragment"><code>curl $MIRROR/$HADOOP_BINARY_URL.mds | grep "^SHA256" | sed 's/ //g' | sed 's/SHA256=//'</code></pre>
+					</section>
+				</section>
+				<section>
+					<h2>vi</h2>
 				</section>
 				<section>
 					<h2>Admin</h2>
-				</section>
-				<section>
-					<h2>Power features</h2>
+ssh
+users/groups
+chown
+permissions
+chmod
+ps
+top
 				</section>
 				<section>
 					<h2>Questions?</h2>
