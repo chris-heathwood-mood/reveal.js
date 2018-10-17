@@ -29,7 +29,7 @@
 					<p><img src="mood/images/intro.png" /></p>
 					<h2>Linux Tech session</h2>
 					<p>Chris Heathwood</p>
-					<p>10/10/2018</p>
+					<p>18/10/2018</p>
 				</section>
 				<section>
 					<h2>Why Linux?</h2>
@@ -115,7 +115,7 @@
 						<aside class="notes">
 							<ul>
 								<li>Bare bones is only 8MB</li>
-								<li>uses musl libc instead of gcc</li>
+								<li>Uses musl libc instead of gcc</li>
 								<li>Makes whole container tiny</li>
 							</ul>
 						</aside>
@@ -187,6 +187,12 @@
 						<h4 class="fragment">bash</h4>
 						<p class="fragment">Has it's own scripting language for shell scripts</p>
 						<p class="fragment">.bashrc</p>
+						<aside class="notes">
+							<ul>
+								<li>Won't go in to bash scripting in depth, have a .sh extension make it executable `#!/bin/bash`</li>
+								<li>Picked up on "log on" if bash is the users preferred shell</li>
+							</ul>
+						</aside>		
 					</section>	
 				</section>
 				<section>
@@ -210,14 +216,14 @@
 					<p class="fragment">grep</p>
 					<p class="fragment">sed</p>
 					<p class="fragment">awk</p>
-					<p class="fragment">less/more</p>
+					<p class="fragment">more/less</p>
 					<p class="fragment">tail -f</p>
 					<aside class="notes">
 						<ul>
 							<li>Show the contents of a file really meant for "concatenate"</li>
 							<li>Global regular expression print, basically search for stuff using regex's</li>
 							<li>Stream editor, replace text in the current stream</li>
-							<li>Aho, Weinberger and Kernighan, it's own loanguage very powerful</li>
+							<li>Aho, Weinberger and Kernighan, it's own language very powerful</li>
 							<li>View big files, less can scroll back up again :p</li>
 							<li>Go to the end of a file, -f is good to follow</li>
 						</ul>
@@ -276,11 +282,11 @@ SHA256 = F837FE26 0587F716 29AAD1F4 FB671927 4E948111 DC96FFC5 A8E26F27 DEAC5602
 					<section>
 						<h3>Permissions</h3>
 						<p class="fragment"><img src="linux/ls.png" /><br />users/groups and permissions</p>
-						<p class="fragment">chown</p>
-						<p class="fragment">chmod</p>
+						<p class="fragment">chown user:group</p>
+						<p class="fragment">chmod 777</p>
 						<aside class="notes">
 							<ul>
-								<li>Relates to history, user has primary groups and secondary groups</li>
+								<li>Relates to history, user has primary groups and secondary groups "usermod -a -G joe.bloggs,sftp joe.bloggs"</li>
 								<li>user:group</li>
 								<li>Break down 7, 1 executable, 2 writable, 4 readable</li>
 							</ul>
