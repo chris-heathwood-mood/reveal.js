@@ -51,6 +51,35 @@
 					</section>
 				</section>
 				<section>
+					<h2>Linux at MooD</h2>
+					<section>
+						<p class="fragment">sftp server for DXC</p>
+						<p class="fragment">Apache Nifi</p>
+						<aside class="notes">
+							<ul>
+								<li>Already up and running on azure</li>
+								<li>Used for the "Lift and shift" work orchestration for the data platform. Maybe chat about the build process a bit</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section>
+					<h2>Potential Linux for the DDP</h2>
+					<section>
+						<p class="fragment">Neo4j</p>
+						<p class="fragment">Couchbase</p>
+						<p class="fragment">Mongo</p>
+						<p class="fragment">Rabbit</p>
+						<p class="fragment">Everything?</p>
+						<aside class="notes">
+							<ul>
+								<li>Because it is light weight</li>
+								<li>Everything mu ha ha, though if moved to dot net core it could</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section>
 					<h2>History</h2>
 					<section>
 						<h4 class="fragment">It started with Unix in the 1970s</h4>
@@ -143,6 +172,21 @@
 								<li>Stable, secure</li>
 								<li>Which is downstream from fedora</li>
 								<li>Again you can buy support from redhat if you get there later</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h3>Installing packages</h3>
+						<p class="fragment">Different distros have different package managers</p>
+						<p class="fragment">CentOS uses yum</p>
+						<p class="fragment">yum update -y</p>
+						<p class="fragment">yum instal -y xxx</p>
+						<aside class="notes">
+							<ul>
+								<li>yum/apt get</li>
+								<li>Yellowdog Updater, Modified</li>
+								<li>Updates all of the packages, might need a restart if kernel updates (with RHEL you can hotfix the kernel)</li>
+								<li>Install a package and all of it's dependencies.</li>
 							</ul>
 						</aside>
 					</section>
